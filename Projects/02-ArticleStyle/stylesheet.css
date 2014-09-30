@@ -1,0 +1,77 @@
+body {
+	background-color: #666666;
+}
+
+.frame {
+	background: #ffffff;
+	width: 775px;
+	padding: 50px 100px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #930;
+	font: Georgia;
+	font-style: bold;
+	font-size: 42px; 
+	line-height: 1; 
+}
+
+h2 {
+	color: #333;
+	font: Georgia;
+	font-style: bold;
+	font-size: 28px;
+	line-height: 1;
+}
+
+h3 {
+	color: #333;
+	font: Georgia;
+	font-style: italic;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.list_title {
+	color: #999;
+	font: Georgia;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+li {
+	color: #333;
+	font: Helvetica;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+p {
+	color: #333;
+	font: Helvetica;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+a:link {
+	color: #930;
+}
+
+blockquote {
+	background-color: #f6f6f6;
+	border-left: 10px;
+	border-left-color: #e3e3e3;
+	color: #333;
+	font: Georgia;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+hr {
+	border: 1px solid #e5e5e5;
+}
