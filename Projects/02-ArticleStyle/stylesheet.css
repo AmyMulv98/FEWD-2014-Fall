@@ -1,5 +1,14 @@
 body {
 	background-color: #666666;
+	/*
+		You can remove margin and paggin from the body element
+		Remember you can use the developer tools to inspect styling on any element, including the body
+	*/
+	margin: 0;
+	/*
+		Much of the body type is set in sans-serif
+	*/
+	font-family: Helvetica, sans-serif;
 }
 
 .frame {
@@ -11,15 +20,18 @@ body {
 
 h1 {
 	color: #930;
-	font: Georgia;
+	/*
+		You need the full declaration if using the shorthand 'font:' property
+	*/
+	font-family: Georgia;
 	font-style: bold;
-	font-size: 42px; 
-	line-height: 1; 
+	font-size: 42px;
+	line-height: 1;
 }
 
 h2 {
 	color: #333;
-	font: Georgia;
+	font-family: Georgia;
 	font-style: bold;
 	font-size: 28px;
 	line-height: 1;
@@ -27,7 +39,7 @@ h2 {
 
 h3 {
 	color: #333;
-	font: Georgia;
+	font-family: Georgia;
 	font-style: italic;
 	font-size: 22px;
 	font-weight: bold;
@@ -63,13 +75,20 @@ a:link {
 
 blockquote {
 	background-color: #f6f6f6;
-	border-left: 10px;
-	border-left-color: #e3e3e3;
+	/*
+		You need the full declaration if using the shorthand 'border:' property (or border-left, -right, -top, -bottom)
+	*/
+	border-left: 10px solid #e3e3e3;
 	color: #333;
 	font: Georgia;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 1.8em;
+	/*
+		Remember to use the inspector, this will help determine which properties to override
+	*/
+	margin: 0;
+	padding: 25px;
 }
 
 hr {
