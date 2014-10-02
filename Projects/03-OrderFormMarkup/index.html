@@ -4,54 +4,63 @@
 		<title>Order Form Markup</title>
 	</head>
 	<body>
-		<h1>Order Form</h1>
-		<table cellpadding="10" border="1px solid">
-			<tr>
-				<td><strong>Description</strong></td>
-				<td><strong>Price</strong></td>
-				<td style="text-align:center;"><strong>Quantity</strong></td>
-			</tr>
-			<tr>
-				<td>Item 1</td>
-				<td>$9.99</td>
-				<td>
-					<form>
-						<input type="text" name="quantity">
-					</form>
-				</td>
-			</tr>
-			<tr>
-				<td>Item 2</td>
-				<td>$19.99</td>
-				<td>
-					<form>
-						<input type="text" name="quantity">
-					</form>
-				</td>
-			</tr>
-			<tr>
-				<td>Item 3</td>
-				<td>$29.99</td>
-				<td>
-					<form>
-						<input type="text" name="quantity">
-					</form>
-				</td>	
-		</table><br>
+		<!--
+			You should only use one form, breaking into multiple forms changes the input's context and data will not submit together
+		-->
+		<form method="GET" action="#">
+			<h1>Order Form</h1>
+			<table cellpadding="10" border="1px solid">
+				<tr>
+					<td><strong>Description</strong></td>
+					<td><strong>Price</strong></td>
+					<td style="text-align:center;"><strong>Quantity</strong></td>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>$9.99</td>
+					<td><input type="text" name="quantity"></td>
+				</tr>
+				<tr>
+					<td>Item 2</td>
+					<td>$19.99</td>
+					<td><input type="text" name="quantity"></td>
+				</tr>
+				<tr>
+					<td>Item 3</td>
+					<td>$29.99</td>
+					<td><input type="text" name="quantity"></td>
+				</tr>
+			</table>
+			<br>
 			<h2>Customer Information</h2>
-			<p>Name</p>
-			<div style="padding:20px; margin-bottom:25px; border:1px solid #888888; max-width:280px;">
-			<form>
-				First name: <br><input type="text" name="firstname"><br>
-				Last name: <br><input type="text" name="lastname"><br>
-			</form>
-			</div>
-			<p>Address</p>
-			<div style="padding:20px; margin-bottom: 25px; border:1px solid #888888; max-width:280px;">
-			<form>
-				Street Address: <br><input type="text" name="streetaddress"><br>
-				City: <br><input type="text" name="city"><br>
-				<p>State: </p><br>
+			<!--
+				Use fieldsets and legend to help structure your forms
+			-->
+			<fieldset>
+				<legend>Name</legend>
+				<!--
+					Labels help with accessibility
+				-->
+				<label>First name:</label>
+				<br>
+				<input type="text" name="firstname">
+				<br>
+				<label>Last name:</label>
+				<br>
+				<input type="text" name="lastname">
+			</fieldset>
+			<fieldset>
+				<legend>Address</legend>
+				<label>Street Address:</label>
+				<br>
+				<input type="text" name="streetaddress">
+				<br>
+				<label>City:</label>
+				<br>
+				<input type="text" name="city">
+				<br>
+				<label>State:</label>
+				<br>
 				<select name="state">
 					<option value="Alabama">Alabama</option>
 					<option value="Alaska">Alaska</option>
@@ -103,21 +112,28 @@
 					<option value="West Virginia">West Virginia</option>
 					<option value="Wisconsin">Wisconsin</option>
 					<option value="Wyoming">Wyoming</option>
-				</select><br>
+				</select>
 				<br>
-				Zip:<br><input type="text" name="zip"><br>
-			</form>
-			</div>
-			<p>Contact</p>
-			<div style="padding:20px; margin-bottom: 25px; border:1px solid #888888; max-width:280px;">
-			<form>
-				Email: <br><input type="text" name="email"><br>
-				Phone: <br><input type="text" name="phone"><br>
-			</form>
-		</div>
-
-
-		<br>
-		<input type="submit" name="Submit Order">
+				<label>Zip:</label>
+				<br>
+				<input type="text" name="zip">
+			</fieldset>
+			<fieldset>
+				<legend>Contact</legend>
+				<label>Email:</label>
+				<br>
+				<input type="text" name="email">
+				<br>
+				<label>Phone:</label>
+				<br>
+				<input type="text" name="phone">
+				<br>
+			</fieldset>
+			<br>
+			<!--
+				Use the value attribute to set the button's text
+			-->
+			<input type="submit" value="Submit Order">
+		</form>
 	</body>
 </html>
