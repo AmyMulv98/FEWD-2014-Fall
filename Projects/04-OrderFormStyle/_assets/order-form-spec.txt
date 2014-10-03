@@ -1,0 +1,42 @@
+Page
+	- Background #CADFEA
+
+Frame
+	- background #ffffff
+	- 800px wide
+
+Content 
+	- 600px wide
+	- 5px radius
+	- 50px spacing, top and bottom
+
+Page Title 
+	- Helvetica Bold, 36px, 1, #0085B2
+
+Section Title
+	- Helvetica Bold, 24px, 1, #0085B2
+
+Table Header
+	- background #C5DFEB
+	- Helvetica, 11px, 1, #0085B2, all caps
+
+Table Item
+	- Helvetica, 16px, 1, #666666
+
+Legend
+	- Helvetica, 16px, 1, #666666
+
+Label
+	- Helvetica, 12px, 1, #666666, all caps
+
+Input
+	- 1px border, #CCCCCC, 3px radius
+	- Helvetica, 16px, 1, #333333
+	- 35px tall
+
+Button
+	- Background #0085B2
+	- Helvetica, 18px, 1, #ffffff, all caps, centered
+	- 3px radius
+	- 35px tall
+	- 200px wide
