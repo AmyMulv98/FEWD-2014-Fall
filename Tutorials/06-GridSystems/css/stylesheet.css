@@ -1,0 +1,32 @@
+
+	.row {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.highlight {
+		background: rgba(26, 104, 173, 0.25);
+		overflow: hidden;
+	}
+
+	.highlight .highlight {
+		border: 1px solid rgba(26, 104, 173, 0.25);
+		color: #fff;
+		font-size: 12px;
+		letter-spacing: 0.15em;
+		padding: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	@media screen and (max-width: 739px) {
+		.mobile_space {
+			margin-bottom: 5px;
+		}
+	}
+
+	@media screen and (min-width: 980px) {
+		.desktop_space {
+			margin-top: 15px;
+		}
+	}
