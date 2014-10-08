@@ -1,0 +1,60 @@
+div {
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+#header {
+    border: 3px solid #000;
+    background-color: #cd7777; 
+    width: 1230px;
+    height: 55px;
+    margin: 0 0 5px 0;   
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+h1 {
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+span {
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-family: Courier;
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+    height: 70%;
+    width: 15%;
+    margin:2.5px;
+    background-color: #e5e5e5;
+}
+
+.right {
+    float: right;
+    height: 70%;
+    width: 83%;
+    margin: 2.5px;
+    background-color: #e5e5e5;
+}
+
+#footer {
+    clear: both;
+    height: 18%;
+    width: 99%;
+    margin: 5px;
+    background-color: #e5e5e5;
+}
+
+    
+    
+    
