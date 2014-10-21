@@ -1,0 +1,221 @@
+.header {
+	background-color: #241915;
+	background: url(../images/beans.jpg);
+	height: 250px;
+	position: relative;
+	color: #fff;
+}
+
+.logo {
+	/*Image Mask*/
+	width:271px;
+	height: 103px;
+	background: url(../images/logo.png);
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+
+	/*Positioning*/
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+.text_centered {
+	text-align: center;
+}
+
+.clear_fix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.headings {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.p {
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+
+}
+
+ul {
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	list-style: none;
+
+}
+
+footer {
+	background-color: #241915;
+	width: 100%;
+	padding-top: 15px;
+}
+
+.footer_icon {
+	color: #fff;
+	background: url(../images/icon.png);
+	display: block;
+	height: 45px;
+	width: 45px;
+	margin: auto;
+}
+
+.copyright {
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 13px;
+	line-height: 1.5px;
+	color: #FFFFFF;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.top {
+	color: #261913;
+	font-size: 32px;
+}
+
+.deck {
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666666;
+
+}
+
+.menu_head {
+	color: #6D3B1C;
+	font-size: 28px;
+	clear: both;
+}
+
+.menu_item {
+	font: "Lucida Grande", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #666666;
+	border-bottom: 1px solid #666666;
+	padding: 10px;
+}
+
+.menu_item_last_mobile {
+	border: none;
+	padding-bottom: 25px;
+}
+
+.menu_wrapper {
+	background-color: #F6F6F6;
+}
+
+.price {
+	font: "Lucida Grande", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #999999;
+}
+
+.hours-location {
+	font-family: Georgia, serif;
+	font-size: 20px;
+	line-height: 1;
+	color: #261913;
+}
+
+.hours-location-text {
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #666666;
+}
+
+.button {
+	border: 3px solid #603F26;
+	color: #603F26;
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 15px;
+	line-height: 1.5px;
+	padding: 16px;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.social {
+	color: #FFFFFF;
+	font-family: "Lucida Grande", sans-serif;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 1.5;
+	display: inline;
+
+}
+
+.social_item {
+	color: #fff;
+	display: inline-block;
+	padding: 0 0 0 20px;
+
+}
+
+.social_item:before {
+	background: #fff;
+	border-radius: 100%;
+	content: '';
+	float: left;
+	display: block;
+	height: 4px;
+	width: 4px;
+	margin: 7px 22px 0 0;
+}
+
+.social_item_first:before{
+	display: none;
+}
+
+.social_list {
+	margin: 0px;
+	float: right;
+	padding: 25px;
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 740px) {
+
+	.menu_item_last {
+		border: none;
+	} 
+
+	.social_item {
+		float: left;
+	}
+
+	.footer_icon_wrapper {
+		margin-bottom: -50px;
+	}
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 739px) {
+	.logo {
+		height: ; 
+		width: ;
+		position: relative;
+	}
+}
