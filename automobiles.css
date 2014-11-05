@@ -1,0 +1,13 @@
+.logo {
+	width: 300px;
+	height: 125px;
+	background: url(../images/logo.png);
+	display: block;
+	white-space: nowrap;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

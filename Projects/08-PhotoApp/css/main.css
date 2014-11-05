@@ -1,0 +1,127 @@
+/*
+
+font-family: 'Roboto', Helvetica, Arial, sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+*/
+
+.body {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.header {
+	padding: 20px 0;
+}
+
+.logo {
+	color: #2b3f4c;
+	font-size: 30px;
+	font-weight: bolder;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none
+}
+
+.logo:before {
+	background: url(../images/icon_sprite.png) no-repeat  0 0;
+	content: "";
+	display: inline-block;
+	height: 60px;
+	margin: 0 15px 0 0;
+	width: 60px;
+	vertical-align: middle; 
+}
+
+.intro {
+	background: #E77E04 url(../images/intro_bg.jpg) no-repeat 50px 50px;
+	padding-bottom: 50px;
+	padding-top: 35px;	
+
+}
+
+.intro-body {
+	font-family: "Roboto", helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-style: inherit;
+	font-weight: lighter;
+	line-height: 1.5;
+	color: #ffffff;
+
+}
+
+.intro-button {
+	background-color: #ffffff;
+	border: hidden;
+	border-radius: 7px;
+	color: #E77E04;
+	display: inline-block;
+	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	padding: 8px 40px;
+}
+
+.no-touch .intro-button:hover {
+	background: #000;
+}
+
+.intro-header {
+	color: #ffffff;
+	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: lighter;
+	line-height: 1;
+
+}
+
+.features {
+	color: #777777;
+	font-family: "Roboto", helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.features-headers {
+	color: #E77E04;
+	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: lighter;
+	line-height: 1;
+}
+
+.gallery-image img {
+	width: 100%;
+}
+
+.images {
+	background-color: #eee;
+	font-family: "Roboto", helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 15px;
+	color: #777777;
+}
+
+.images-header {
+	color: #2b3f4c;
+	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	font-weight: lighter;
+	line-height: 1;
+}
+
+
+.download-header {
+	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+	font-size: 42px;
+	font-weight: lighter;
+	line-height: 1;
+	color: #E77E04;
+}
+
+.download-body {
+	font-family: "Roboto", helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #777777;
+}
