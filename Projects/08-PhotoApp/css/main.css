@@ -10,11 +10,23 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header {
-	padding: 20px 0;
+	padding: 20px 20px;
+}
+
+.button {
+	background: #000;
+	border-radius: 3px;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	padding: 10px 30px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .logo {
 	color: #2b3f4c;
+	display: block;
 	font-size: 30px;
 	font-weight: bolder;
 	line-height: 1.5;
@@ -33,10 +45,14 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .intro {
-	background: #E77E04 url(../images/intro_bg.jpg) no-repeat 50px 50px;
-	padding-bottom: 50px;
-	padding-top: 35px;	
+	background: #E77E04 url(../images/intro_bg.jpg) no-repeat center top 	
 
+}
+
+.intro-row {
+	padding-bottom: 50px;
+	padding-top: 35px;
+	position: relative;
 }
 
 .intro-body {
@@ -79,6 +95,8 @@ font-family: 'Roboto Condensed', sans-serif;
 	font-family: "Roboto", helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	padding-top: 10px;
+	padding-bottom: 40px;
 }
 
 .features-headers {
@@ -87,19 +105,25 @@ font-family: 'Roboto Condensed', sans-serif;
 	font-size: 26px;
 	font-weight: lighter;
 	line-height: 1;
+	margin-bottom: 10px;
+	vertical-align: middle;
 }
 
 .gallery-image img {
 	width: 100%;
 }
 
+.gallery-image {
+	margin-bottom: 10px;
+}
+
 .images {
 	background-color: #eee;
+	color: #777777;
 	font-family: "Roboto", helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	padding-top: 15px;
-	color: #777777;
+	padding-bottom: 35px;
 }
 
 .images-header {
@@ -111,11 +135,18 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 
+.downloads-box {
+	margin-bottom: 75px;
+}
+
+
 .download-header {
 	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
 	font-size: 42px;
 	font-weight: lighter;
 	line-height: 1;
+	margin-top: 40px;
+	text-align: center;
 	color: #E77E04;
 }
 
@@ -124,4 +155,225 @@ font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
 	color: #777777;
+	text-align: center;
 }
+
+.download-button {
+	background: #000 url(../images/icon_sprite.png) no-repeat;
+	border-radius: 5px;
+	height: 55px;
+	margin: 20px 10px 10px;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+}
+
+.download-button.appstore {
+	background-position: center -200px;
+}
+
+.download-button.google {
+	background-position: center -260px;
+}
+
+.download-button.amazon {
+	background-position: center -320px;
+}
+
+.footer-text {
+	border-top: 1px solid #aaa;
+	font-family: "Roboto", helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1; 
+	padding-top: 25px;
+	text-align: center;
+}
+
+.social-icon {
+	background: url(../images/icon_sprite.png) no-repeat;
+	display: inline-block;
+	height: 40px;
+	margin: 0 0 20px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 40px;
+}
+
+.facebook {
+	background-position: -80px 0;
+}
+
+.twitter {
+	background-position: -120px 0; 
+}
+
+.google-plus {
+	background-position: -160px 0;
+}
+
+.support-privacy {
+	margin: 0 7px;
+	color: #2b3f4c;
+	text-align: center;
+	text-decoration: none;
+}
+
+.copyright {
+	color: #777777;
+	text-align: center;
+}
+
+/*Tablet*/
+
+@media screen and (max-width: 739px) {
+	.features-headers:after {
+		background: url(../images/icon_sprite.png) no-repeat;
+		content: "";
+		display: inline-block;
+		margin: 0 0 0 15px;
+		vertical-align: middle;
+	}
+
+	.tag-icon:after {
+		background-position: 0 -80px;
+		height: 31px;
+		margin-top: -5px;
+		width: 31px;
+	}
+
+	.cloud-icon:after {
+		background-position: -40px -80px;
+		height: 35px;
+		width: 35px;
+	}
+
+	.map-icon:after {
+		background-position: -80px -80px;
+		height: 33px;
+		margin-top: -9px;
+		width: 35px;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.intro-row:before {
+		background: url(../images/intro_phone.png) no-repeat 0 0;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 400px;
+		position: absolute;
+		right: -70px;
+		width: 325px;
+	}
+
+	.features-items {
+		text-align: center;
+	}
+
+	.features-headers:before {
+		background: url(../images/icon_sprite.png) no-repeat;
+		content: "";
+		display: block;
+		margin: 0 0 0 15px;
+	}
+
+	.tag-icon:before {
+		background-position: 0 -120px;
+		height: 70px;
+		margin-top: 0;
+		width: 70px;
+	}
+
+	.cloud-icon:before {
+		background-position: -80px -120px;
+		height: 70px;
+		width: 75px;
+	}
+
+	.map-icon:before {
+		background-position: -160px -120px;
+		height: 70px;
+		margin-top: 0;
+		width: 70px;
+	}
+
+	.logo {
+		text-align: left;
+	}
+
+	.images {
+		padding-top: 25px;
+	}
+
+	.downloads-box {
+		margin-top: 75px;
+	}
+
+	.download-header {
+		margin-bottom: 5px;
+		margin-bottom: 10px;
+	}
+
+	.download-button {
+		display: inline-block;
+		width: 30%;
+	}
+
+	.footer-text-links {
+		padding-bottom: 10px;
+		margin-top: 10px;
+		text-align: left;
+	}
+
+	.footer-social-icons {
+		text-align: right;
+	}
+
+	.copyright {
+		display: inline;
+		text-align: left;
+}
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 979px) {
+	.tablet-margin {
+		margin-top: 40px;
+	}
+
+	.images-header {
+		margin: 0;
+	}
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 980px) {
+	.intro-row:before {
+		background: url(../images/intro_phone.png) no-repeat 0 0;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 400px;
+		position: absolute;
+		right: 70px;
+		width: 325px;
+	}
+
+	.logo {
+		text-align: left;
+	}
+
+	.images {
+		padding-top: 50px;
+	}
+
+	.images-header {
+		margin-top: 65px;
+	}
+
+}
+
+

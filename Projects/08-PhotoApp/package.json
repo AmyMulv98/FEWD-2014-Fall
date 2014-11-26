@@ -9,5 +9,13 @@
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "js": {},
+  "css": {
+  	"css/site.min.css": [
+  		"components/normalize-css/normalize.css",
+		"components/Gridlock/fs.gridlock.min.css",
+		"css/main.css"
+  	]
   }
 }

@@ -3,7 +3,7 @@
 	session_start();
 
 	// Figure out www_root
-	$url = "http" . (($_SERVER["HTTPS"]) ? "s://" : "://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+	$url = strtolower("http" . (($_SERVER["HTTPS"]) ? "s://" : "://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
 	$cwd = end(explode("/", strtolower(getcwd())));
 	$www_root = substr($url, 0, strpos($url, $cwd) + strlen($cwd)) . "/";
 
